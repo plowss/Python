@@ -1,0 +1,17 @@
+def list_to_integer(digits):
+    result_str = ""  # Prepare an empty string
+
+    # Traverse the list of digits from left to right
+    for digit in digits:
+        # Convert the current digit to a string and concatenate it to the result string
+        result_str += str(digit)
+
+    # Finally, convert the result string to an integer
+    result = int(result_str)
+
+    return result
+
+# Example usage:
+digit_list = [8, 3, 5, 1]
+result_integer = list_to_integer(digit_list)
+print(result_integer)
